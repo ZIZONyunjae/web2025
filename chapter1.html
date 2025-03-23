@@ -1,5 +1,12 @@
-<h1>Chapter 1</h1>
-Chatper 1 summary
-HTML
-CSS
-JavaScript
+<h1>Chapter 1 practice</h1>
+function random(number) {
+  return Math.floor(Math.random() * number);
+}
+
+function bgChange() {
+  const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+
+  document.body.style.backgroundColor = rndCol;
+}
+
+bgChange();
