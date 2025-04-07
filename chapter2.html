@@ -203,29 +203,36 @@ typeof(3.145) //'number'<br>
       font-family: Arial, sans-serif;
       line-height: 1.6;
     }
+
     h2 {
       font-size: 24px;
+      font-weight: bold;
+      text-decoration: underline;
     }
+
     ul {
       margin-top: 10px;
+      margin-bottom: 20px;
     }
+
     table {
-      width: 90%;
       border-collapse: collapse;
-      margin-top: 15px;
+      width: 80%;
     }
+
     th, td {
       border: 1px solid black;
       padding: 8px;
       text-align: left;
     }
+
     .code-box {
+      margin-top: 20px;
       border: 1px solid #ccc;
       background-color: #f9f9f9;
+      padding: 10px;
       font-family: 'Courier New', monospace;
       white-space: pre-line;
-      padding: 10px;
-      margin-top: 20px;
     }
   </style>
 </head>
@@ -260,4 +267,24 @@ typeof(3.145) //'number'<br>
     <tr>
       <td>\'</td>
       <td>작은따옴표 문자</td>
-      <td>\
+      <td>\r</td>
+      <td>캐리지 리턴 문자</td>
+    </tr>
+    <tr>
+      <td>\"</td>
+      <td>큰따옴표 문자</td>
+      <td>\t</td>
+      <td>탭 문자</td>
+    </tr>
+  </table>
+
+  <div class="code-box">
+console.log('I\'m studying now.')
+// I'm studying now
+
+console.log('탭\t포함')
+// 탭 포함
+  </div>
+
+</body>
+</html>
