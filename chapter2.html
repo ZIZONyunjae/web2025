@@ -80,5 +80,37 @@
     <h3>변수지정을 다시 할당한 경우 </h3>
     <p1>const number;<br>
     number = 10;<br>
-     number = 20; >>> error
+     number = 20; >>> error (상수 변수에는 다른 값을 할당할 수 없다.)
     </p1>
+
+<h2>var와, let,const</h2></h2>
+<table border="1" style="width: 50%;">
+  <thead>
+    <tr>
+      <th>키워드</th>
+      <th>선언하지 않고 사용하면</th>
+      <th>재선언</th>
+      <th>재할당</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>var</td>
+      <td>오류 없음</td>
+      <td>O</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>let</td>
+      <td>오류 발생</td>
+      <td>X</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>const</td>
+      <td>오류 발생</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+  </tbody>
+</table>
