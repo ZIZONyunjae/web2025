@@ -186,13 +186,18 @@ typeof(3.145) //'number'<br>
 </p1>
 
 <h2>문자열(string)</h2>
-<p1>작은따옴표나(')나 큰따옴표(")로 묶은 데이터</p1>
+<p1>*작은따옴표나(')나 큰따옴표(")로 묶은 데이터<br>
+ *큰따옴표이든, 작은따옴표이든 문자열의 앞뒤에 붙이는 따옴표는 같아야 함<br>
+ ex)typeof("안녕하세요?") //'string'<br>
+ typeof("10?") //'string'<br>
+ typeof("") //'string',빈 문자열<br>
+</p1>
 
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>문자열(string)</title>
+  <title>특수 기호 표시하기</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -201,38 +206,58 @@ typeof(3.145) //'number'<br>
     h2 {
       font-size: 24px;
     }
-    h2 span {
-      font-weight: bold;
-      text-decoration: underline;
-    }
     ul {
       margin-top: 10px;
     }
+    table {
+      width: 90%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
     .code-box {
       border: 1px solid #ccc;
-      padding: 10px;
-      font-family: 'Courier New', monospace;
       background-color: #f9f9f9;
+      font-family: 'Courier New', monospace;
       white-space: pre-line;
-      margin-top: 15px;
+      padding: 10px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
-  <h2>문자열(<span>string</span>)</h2>
+  <h2>특수 기호 표시하기</h2>
 
   <ul>
-    <li>작은따옴표(')나 큰따옴표(")로 묶은 데이터</li>
-    <li>큰따옴표이든, 작은따옴표이든 문자열의 앞뒤에 붙이는 따옴표는 같아야 함</li>
-    <li>최근에는 작은 따옴표(')를 많이 사용함</li>
+    <li>특수 기호를 표시하려면 백슬래시(<code>\</code>) 다음에 기호 사용</li>
+    <li>(예) 문자열이 아니라 순수하게 따옴표를 표시하고 싶다면 <code>\'</code>처럼 써야 함</li>
   </ul>
 
-  <div class="code-box">
-    typeof("안녕하세요?")   // 'string'<br>
-    typeof("10")           // 'string'<br>
-    typeof("")             // 'string', 빈 문자열
-  </div>
-
-</body>
-</html>
+  <table>
+    <tr>
+      <td>\ddd<br>(여기서 d는 숫자)</td>
+      <td>8진수 문자</td>
+      <td>\b</td>
+      <td>백스페이스 문자</td>
+    </tr>
+    <tr>
+      <td>\xdd</td>
+      <td>16진수 문자</td>
+      <td>\f</td>
+      <td>폼 피드 문자</td>
+    </tr>
+    <tr>
+      <td>\\</td>
+      <td>백슬래시 문자</td>
+      <td>\n</td>
+      <td>줄 바꿈 문자</td>
+    </tr>
+    <tr>
+      <td>\'</td>
+      <td>작은따옴표 문자</td>
+      <td>\
