@@ -227,12 +227,20 @@ typeof(3.145) //'number'<br>
     }
 
     .code-box {
-      margin-top: 20px;
+      margin-top: 25px;
       border: 1px solid #ccc;
       background-color: #f9f9f9;
-      padding: 10px;
       font-family: 'Courier New', monospace;
+      padding: 10px;
       white-space: pre-line;
+    }
+
+    .console-output {
+      margin-top: 10px;
+      font-family: 'Courier New', monospace;
+      background-color: #f1f1f1;
+      padding: 10px;
+      border-left: 3px solid #ccc;
     }
   </style>
 </head>
@@ -279,15 +287,22 @@ typeof(3.145) //'number'<br>
   </table>
 
   <div class="code-box">
-console.log('I\'m studying now.')
-// I'm studying now
+    console.log('I\'m studying now.')<br>
+    console.log('탭\t포함')
+  </div>
 
-console.log('탭\t포함')
-// 탭 포함
+  <div class="console-output">
+&gt; console.log('I\'m studying now');<br>
+I'm studying now<br>
+undefined<br><br>
+&gt; console.log('탭\t포함');<br>
+탭     포함<br>
+undefined
   </div>
 
 </body>
 </html>
+
 
 <h2>템플릿 리터럴</h2>
 <p1>문자열과변수, 식을 섞어서 하나의 문자열을 만드는 표현 형식<br>
