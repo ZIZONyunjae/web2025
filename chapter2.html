@@ -311,3 +311,47 @@ ex)name = "백두산"<br>
  console.log('${name}님,${classroom}호 강의실로 입장하세요.')<br>
  >>>         변수 부분만${}로 묶어주고 원하는 결과 문자열을 그대로 사용하면 됨
 </p1>
+
+<h2>truthy와 falsy</h2>
+<p1>truth:true로 인정할 수있는 값, falsy:false로 인정할 수 있는 값<br>
+falsy 값을 제외한 모든 값은 truthy하다. 즉true로 친다.</p1>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Falsy 값</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h3 {
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 10px;
+    }
+
+    .falsy-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 100px;
+      background-color: #f9f9f9;
+      font-family: 'Courier New', monospace;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>falsy 값</h3>
+
+  <div class="falsy-box">
+0       // 숫자 0  
+""      // 빈 문자열  
+NaN     // Not a Number  
+undefined  
+null
+  </div>
+
+</body>
+</html>
