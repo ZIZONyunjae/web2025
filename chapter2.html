@@ -412,3 +412,100 @@ two = 10 //숫자형<br>
 one + two //"2010"<br>
 one -two //10<br>
 </p1>
+
+<h2>프롬프트 창에서 값을 입력 받으면 그 값은 문자열</h2>
+<p1>let useInput = prompt("아무 숫자나 입력하세요.")<br>
+typeof(useInput) // 'string'<br>
+result = userinput * 10 //1000<br>
+userinput //'10'<br>
+ *프롬프트 창에서 숫자를 입력 받을 경우 직접 숫자로 변호나한 후 연산에 사용하는 것이 좋다.*<br>
+</p1>
+
+<h2>숫자형으로 변환하기 - Number()</h2>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>형 변환 결과</title>
+  <style>
+    table {
+      width: 40%;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>기존 유형</th>
+        <th>변환 결과</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>true</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>false</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>숫자</td>
+        <td>숫자</td>
+      </tr>
+      <tr>
+        <td>null</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>undefined</td>
+        <td>NaN</td>
+      </tr>
+      <tr>
+        <td>정수 문자열</td>
+        <td>정수 (맨 앞에 0이 있으면 제거)</td>
+      </tr>
+      <tr>
+        <td>실수 문자열</td>
+        <td>실수 (맨 앞에 0이 있으면 제거)</td>
+      </tr>
+      <tr>
+        <td>16진수 문자열</td>
+        <td>10진수</td>
+      </tr>
+      <tr>
+        <td>빈 문자열</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>위 상황 외</td>
+        <td>NaN</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
+
+<p1>Number(true) //1<br>
+Number("20") //20<br>
+Number("Hi?") //NaN </p1>
+
+<h2>숫자형으로 변환하기 - parselnt(), parseFloat()</h2>
+<p1>parselnt()함수: 괄호 안의값을 정수로 변환<br>
+ parseFloat()함수: 괄호 안의값을 실수로 변환<br>
+</p1>
