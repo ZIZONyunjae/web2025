@@ -546,76 +546,53 @@ ex)Boolean()<br><br>
       width: 40%;
       border-collapse: collapse;
       margin: 20px auto;
+      text-align: center;
       font-family: Arial, sans-serif;
     }
     th, td {
-      border: 1px solid #333;
+      border: 1px solid #444;
       padding: 10px;
-      text-align: center;
     }
     th {
-      background-color: #f2f2f2;
+      background-color: #f0f0f0;
     }
     caption {
       caption-side: top;
-      font-weight: bold;
       font-size: 1.2em;
+      font-weight: bold;
       margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
   <table>
-    <caption>숫자형 문자열 및 undefined의 Boolean 평가</caption>
+    <caption>Boolean 평가 기준별 데이터 정리</caption>
     <thead>
       <tr>
-        <th>데이터</th>
-        <th>Boolean 평가</th>
-        <th>비고</th>
+        <th>Boolean 값</th>
+        <th>숫자형</th>
+        <th>문자열</th>
+        <th>undefined</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>"123"</td>
         <td>true</td>
-        <td>0이 아닌 숫자형 문자열</td>
+        <td>0이 아닌 값<br>(예: 1, -1)</td>
+        <td>빈 문자열이 아닌 모든 문자열<br>(예: "abc", "-1")</td>
+        <td>-</td>
       </tr>
       <tr>
-        <td>"-1"</td>
-        <td>true</td>
-        <td>음수 문자열도 true</td>
-      </tr>
-      <tr>
-        <td>"text"</td>
-        <td>true</td>
-        <td>빈 문자열이 아닌 모든 문자열</td>
-      </tr>
-      <tr>
-        <td>"0"</td>
-        <td>true</td>
-        <td>문자열 "0"은 true</td>
-      </tr>
-      <tr>
-        <td>""</td>
         <td>false</td>
-        <td>빈 문자열</td>
-      </tr>
-      <tr>
         <td>0</td>
-        <td>false</td>
-        <td>숫자 0</td>
-      </tr>
-      <tr>
+        <td>빈 문자열("")</td>
         <td>undefined</td>
-        <td>false</td>
-        <td>정의되지 않은 값</td>
       </tr>
     </tbody>
   </table>
 </body>
 </html>
 
-</p1>
 
 <h2>[실습] 화씨 온도 > 섭씨 온도 변환기</h2>
 <p1>공식: 섭씨 온도 = (화씨온도 - 32) / 18<br>
@@ -662,3 +639,4 @@ ex)Boolean()<br><br>
 </html>
 
 </p1>
+3
