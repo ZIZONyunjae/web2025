@@ -242,3 +242,96 @@ alert(current + "년 현재,\n" + birthyear + "년에태어난 사람의 나이�
 </html>
 </p1>
 
+<h2>연산자 우선 순위</h2>
+<p1>단항 연산자 > 산술 연산자 > 비교 연산자 > 논리 연산자 > 할당 연산자
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>연산자 우선순위 표</title>
+  <style>
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 10px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .row-header {
+      background-color: #d3f0f2;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>1st</th>
+      <th>2nd</th>
+      <th>3rd</th>
+      <th>4th</th>
+      <th>5th</th>
+      <th>6th</th>
+      <th>7th</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="row-header">단항 연산자</td>
+      <td>!</td>
+      <td>++</td>
+      <td>--</td>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td class="row-header">산술 연산자</td>
+      <td>*</td>
+      <td>/</td>
+      <td>%</td>
+      <td>+</td>
+      <td>-</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td class="row-header">비교 연산자</td>
+      <td>&lt;</td>
+      <td>&lt;=</td>
+      <td>&gt;</td>
+      <td>&gt;=</td>
+      <td>==</td>
+      <td>!=</td>
+      <td>===</td>
+    </tr>
+    <tr>
+      <td class="row-header">논리 연산자</td>
+      <td colspan="1">&&</td>
+      <td colspan="1">||</td>
+      <td colspan="5"></td>
+    </tr>
+    <tr>
+      <td class="row-header">할당 연산자</td>
+      <td>=</td>
+      <td>+=</td>
+      <td>-=</td>
+      <td>*=</td>
+      <td>/=</td>
+      <td>%=</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+</p1>
+
