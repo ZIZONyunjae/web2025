@@ -341,15 +341,18 @@ alert(current + "년 현재,\n" + birthyear + "년에태어난 사람의 나이�
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>나이 계산기</title>
+  <title>주석 예시</title>
 </head>
 <body>
 
-  <h1>나이 계산기</h1>
+  <!-- 사용자로부터 입력을 받아 나이를 계산하는 버튼 -->
   <button onclick="calculateAge()">나이 계산하기</button>
+  
+  <!-- 결과가 출력될 위치 -->
   <p id="result"></p>
 
   <script>
+    // 이 함수는 나이를 계산하고 결과를 보여줍니다.
     function calculateAge() {
       const currentYear = 2022;
       let birthYear = parseInt(prompt("태어난 연도를 입력하세요. (YYYY)", ""));
