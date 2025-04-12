@@ -345,7 +345,7 @@ alert(current + "년 현재,\n" + birthyear + "년에태어난 사람의 나이�
 </head>
 <body>
 
-  <h3>나이 계산기</h3>
+  <h1>나이 계산기</h1>
   <button onclick="calculateAge()">나이 계산하기</button>
   <p id="result"></p>
 
@@ -353,17 +353,24 @@ alert(current + "년 현재,\n" + birthyear + "년에태어난 사람의 나이�
     function calculateAge() {
       const currentYear = 2022;
       let birthYear = parseInt(prompt("태어난 연도를 입력하세요. (YYYY)", ""));
-      
+
       if (isNaN(birthYear)) {
         document.getElementById("result").innerText = "올바른 연도를 입력해주세요.";
         return;
       }
 
       let age = currentYear - birthYear + 1;
-      document.getElementById("result").innerText = "당신의 나이는 " + age + "세입니다.";
+
+      if (age < 20) {
+        alert("성인이 아닙니다.");
+      }
+
+      alert(`${currentYear}년 현재, ${age}세입니다.`);
+      document.getElementById("result").innerText = `${currentYear}년 현재, ${age}세입니다.`;
     }
   </script>
 
 </body>
 </html>
- 
+
+</p1>
