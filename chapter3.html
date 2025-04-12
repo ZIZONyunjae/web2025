@@ -444,4 +444,41 @@ if(input) { //input에 값이 들어있다면 truthy<br>
 <p1>small = (num1 < num2)? num1:num2;<br>
   true시 num1<br>
   false시 num2<br>
+
+ [실습] 홀짝 생성기<br>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>짝수 홀수 판별기</title>
+</head>
+<body>
+
+  <h1>짝수인지 홀수인지 확인해보세요</h1>
+  <button onclick="checkEvenOdd()">판별 시작</button>
+
+  <script>
+    function checkEvenOdd() {
+      let userNumber = prompt("숫자를 입력하세요");
+
+      if (userNumber !== null) {
+        userNumber = parseInt(userNumber);
+
+        if (isNaN(userNumber)) {
+          alert("숫자를 정확히 입력해주세요.");
+        } else {
+          (userNumber % 2 === 0)
+            ? alert(`${userNumber} : 짝수`)
+            : alert(`${userNumber} : 홀수`);
+        }
+      } else {
+        alert("입력이 취소되었습니다.");
+      }
+    }
+  </script>
+
+</body>
+</html>
+
 </p1>
+
