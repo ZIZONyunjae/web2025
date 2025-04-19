@@ -482,3 +482,27 @@ if(input) { //input에 값이 들어있다면 truthy<br>
 
 </p1>
 
+<h2>(실습) 구구단 만들기</h2>
+  
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>구구단 - for문</title>
+  <link rel="stylesheet" href="css/gugudan.css">
+</head>
+<body>
+
+  <script>
+    for (var i = 2; i <= 9; i++) {
+      document.write("<div>");
+      document.write("<h3>" + i + "단</h3>");
+      for (var j = 1; j <= 9; j++) {
+        document.write(`${i} × ${j} = ${i * j}<br>`);
+      }
+      document.write("</div>");
+    }
+  </script>
+
+</body>
+</html>
